@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="dist/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+  <script src="app.js" defer></script>
+  
+  <title>Frontend Mentor | Project tracking intro component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main id="main">
+    <div class="hero">
+      <div class="hero-wrapper container">
+        <div class="logo-hamburger">
+          <img src="dist/images/logo.svg" alt="logo" class="logo">
+          <img src="dist/images/icon-hamburger.svg" alt="icon-hamburger" id="hamburger" class="hamburger">
+        </div>
+        <!-- Mobile Menu -->
+        <nav class="menu" id="menu">
+          <div class="btn-close btn-close-hide" id="btn-close">
+            <img src="dist/images/icon-close.svg" alt="icon-close">
+          </div>
+          <div class="mobile-menu menu-hide">
+            <a href="#">Product</a>
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <hr>
+            <a href="#" class="login">Login</a>
+          </div>
+        </nav>
+      </div>
+      <div class="img-desktop">
+        <img src="dist/images/illustration-devices.svg" alt="">
+      </div>
+      <div class="context-wrapper">
+        <div class="illustration">
+          <img src="dist/images/illustration-devices.svg" alt="illustration-devices">
+        </div>
+        
+        <div class="text">
+          <p class="mono">
+            <span class="new">New</span>
+            Monograph Dashboard
+          </p>
+          <h1>Powerful insights into your team</h1>
+          <p class="project-planning-text">
+            Project planning and time tracking <br> for agile teams
+          </p>
+          <div class="btn-section">
+            <button>Schedule a demo</button>
+            to see a live preview
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://buch-dev.GitHub.io/Daniel-Okafor/" target="_blank">Daniel Okafor</a>.
+    </p>
+  </footer>
+</body>
+</html>

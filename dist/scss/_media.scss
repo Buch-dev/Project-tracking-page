@@ -1,0 +1,35 @@
+@media screen and (min-width: 50em) {
+    .hero {
+        position: relative;
+
+        .img-desktop {
+            // border: 1px solid red;
+            display: block;
+            position: absolute;
+            right: 0;
+            overflow: hidden;
+       
+            img {
+                margin-right: -17rem;
+                margin-top: 5rem;
+            }
+        }
+    
+        .hamburger {
+            display: none;
+        }
+    
+        // .btn-close {
+        //     display: block;
+        // }
+    
+        .hero-wrapper {
+
+            .menu-hide {
+                display: block;
+                // left: 100vw;
+            }
+        }
+        
+    }
+}

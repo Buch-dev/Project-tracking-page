@@ -1,0 +1,315 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Barlow', sans-serif;
+}
+
+main {
+  height: 800px;
+  margin-bottom: 5rem;
+  overflow: hidden;
+}
+
+main .hero .hero-wrapper {
+  position: relative;
+}
+
+main .hero .hero-wrapper .logo-hamburger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+  transition: all .5s ease;
+}
+
+main .hero .hero-wrapper .logo-hamburger .logo {
+  width: 25px;
+}
+
+main .hero .hero-wrapper .logo-hamburger .hamburger {
+  cursor: pointer;
+}
+
+main .hero .hero-wrapper .logo-hamburger::before {
+  content: '';
+  height: 740px;
+  width: 400px;
+  background-position: 0% 20%;
+  position: absolute;
+  transform: translateX(9.5rem);
+  background: #eef3f6;
+  z-index: -1;
+  border-bottom-left-radius: 50px;
+}
+
+@media screen and (min-width: 30em) {
+  main .hero .hero-wrapper .logo-hamburger::before {
+    width: 700px;
+  }
+}
+
+@media screen and (min-width: 50em) {
+  main .hero .hero-wrapper .logo-hamburger::before {
+    background-position: 0 50%;
+    left: 35%;
+    width: 700px;
+  }
+}
+
+main .hero .hero-wrapper .menu {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+main .hero .hero-wrapper .btn-close {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 82.5%;
+  z-index: 3;
+}
+
+main .hero .hero-wrapper .btn-close img {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 50em) {
+  main .hero .hero-wrapper .btn-close {
+    display: none;
+  }
+}
+
+main .hero .hero-wrapper .mobile-menu {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-inline: auto;
+  padding-block: 2rem;
+  position: absolute;
+  width: 82.5%;
+  background-color: #fff;
+  text-transform: uppercase;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+main .hero .hero-wrapper .mobile-menu a {
+  font-weight: 700;
+  color: #242942;
+  text-decoration: none;
+}
+
+main .hero .hero-wrapper .mobile-menu a:hover {
+  color: #a0a1ac;
+}
+
+main .hero .hero-wrapper .mobile-menu hr {
+  color: #a0a1ac;
+  width: 80%;
+}
+
+main .hero .hero-wrapper .mobile-menu .login {
+  color: #a0a1ac;
+}
+
+main .hero .hero-wrapper .menu-hide {
+  display: none;
+}
+
+@media screen and (min-width: 50em) {
+  main .hero .hero-wrapper .menu-hide {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-top: 0;
+    background: transparent;
+    padding-block: 0;
+    width: 93%;
+    align-items: center;
+    justify-content: flex-end;
+    box-shadow: none;
+  }
+  main .hero .hero-wrapper .menu-hide hr {
+    width: 2px;
+  }
+}
+
+.hamburger-hide {
+  opacity: 0;
+}
+
+.btn-close-hide {
+  opacity: 0;
+}
+
+.img-desktop {
+  display: none;
+}
+
+.context-wrapper {
+  display: flex;
+  margin-inline: auto;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 50em) {
+  .context-wrapper {
+    flex-direction: row-reverse;
+    width: 82.5%;
+    margin-top: 6rem;
+  }
+  .context-wrapper * {
+    flex-basis: 100%;
+  }
+  .context-wrapper .project-planning-text {
+    margin-top: 1.2rem;
+  }
+  .context-wrapper .btn-section {
+    margin-top: 3rem;
+  }
+  .context-wrapper .illustration {
+    margin-top: 0;
+    margin-left: 10rem;
+  }
+  .context-wrapper .illustration img {
+    transform: scale(2.5);
+  }
+}
+
+.illustration {
+  margin-top: 5rem;
+  height: 250px;
+}
+
+@media screen and (min-width: 50em) {
+  .illustration {
+    visibility: hidden;
+    margin-top: 12rem;
+  }
+}
+
+.illustration img {
+  width: 100%;
+  margin-top: 2rem;
+  margin-left: 4.1rem;
+  transform: scale(1.35);
+}
+
+@media screen and (min-width: 30em) {
+  .illustration img {
+    width: 80%;
+    left: 50%;
+  }
+}
+
+@media screen and (min-width: 50em) {
+  .illustration img {
+    width: 50%;
+    left: 60%;
+  }
+}
+
+.text {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  margin-inline: auto;
+}
+
+.text span {
+  color: #fff;
+  background: #242942;
+  padding: .1rem .4rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: normal;
+}
+
+.text .mono {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: #242942;
+}
+
+.text h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+  margin-top: 1rem;
+  color: #242942;
+  text-transform: uppercase;
+  font-size: 2.1rem;
+  letter-spacing: 2px;
+}
+
+.text .project-planning-text {
+  margin-top: .9rem;
+  font-size: 1.2rem;
+  color: #242942;
+}
+
+.text .btn-section {
+  margin-top: 1rem;
+  text-transform: uppercase;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: #242942;
+  font-size: .9rem;
+  letter-spacing: 1px;
+}
+
+.text .btn-section button {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  padding: .5rem 1.1rem;
+  background: #ff5c5c;
+  color: #fff;
+  margin-right: 1rem;
+}
+
+.text .btn-section button:hover {
+  cursor: pointer;
+  background: #ff7575;
+  transition: all .5s ease;
+}
+
+.container {
+  max-width: 70rem;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 50em) {
+  .hero {
+    position: relative;
+  }
+  .hero .img-desktop {
+    display: block;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+  }
+  .hero .img-desktop img {
+    margin-right: -17rem;
+    margin-top: 5rem;
+  }
+  .hero .hamburger {
+    display: none;
+  }
+  .hero .hero-wrapper .menu-hide {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */

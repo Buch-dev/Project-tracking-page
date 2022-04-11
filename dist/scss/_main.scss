@@ -115,7 +115,7 @@ main {
     
             .menu-hide {
                 display: none;
-                left: 100vw;
+                // left: 100vw;
 
                 @media screen and (min-width: 50em) {
 
@@ -292,11 +292,8 @@ main {
     }
 
     @media screen and (min-width: 50em) {
-        // border: 1px solid red;
-
         h1 {
             font-size: 3.5rem;
-            letter-spacing: 2px;
             line-height: 1;
         }
     }

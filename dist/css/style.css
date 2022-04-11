@@ -123,6 +123,7 @@ main .hero .hero-wrapper .mobile-menu .login {
 
 main .hero .hero-wrapper .menu-hide {
   display: none;
+  left: 100vw;
 }
 
 @media screen and (min-width: 50em) {
@@ -287,8 +288,10 @@ main .hero .hero-wrapper .menu-hide {
 }
 
 @media screen and (min-width: 50em) {
-  .text {
-    width: 100%;
+  .text h1 {
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    line-height: 1;
   }
 }
 

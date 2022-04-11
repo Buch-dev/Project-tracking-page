@@ -221,6 +221,7 @@ main .hero .hero-wrapper .menu-hide {
 .text {
   margin-top: 4rem;
   margin-bottom: 4rem;
+  width: 85%;
   margin-inline: auto;
 }
 
@@ -283,6 +284,12 @@ main .hero .hero-wrapper .menu-hide {
   cursor: pointer;
   background: #ff7575;
   transition: all .5s ease;
+}
+
+@media screen and (min-width: 50em) {
+  .text {
+    width: 100%;
+  }
 }
 
 .container {

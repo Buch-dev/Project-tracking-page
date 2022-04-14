@@ -1,6 +1,6 @@
 const menu = document.querySelector('.mobile-menu');
 const hamburger = document.getElementById('hamburger');
-const btnClose = document.getElementById('btn-close');
+const btnClose = document.getElementById('btn-close-img');
 
 hamburger.addEventListener('click', showMenu);
 btnClose.addEventListener('click', showMenu)

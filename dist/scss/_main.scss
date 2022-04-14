@@ -3,163 +3,164 @@ main {
     height: 800px;
     margin-bottom: 5rem;
     overflow: hidden;
+}
 
+.hero-wrapper {
+    // border: 5px solid yellowgreen;
+    position: relative;
+    width: 85%;
+    margin: 0 auto 0 auto;
+}
 
-    .hero {
-        .hero-wrapper {
-                position: relative;
-            .logo-hamburger {
-                // border: 1px solid red;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                margin-top: 3rem;
-                transition: all .5s ease;
-    
-                .logo {
-                    width: 25px;
-                }
-    
-                .hamburger {
-                    // border: 1px solid #000;
-                    cursor: pointer;
-                }
-    
-                &::before {
-                    content: '';
-                    // border: 3px solid green;
-                    height: 740px;
-                    width: 400px;
-                    background-position: 0% 20%;
-                    position: absolute;
-                    transform: translateX(9.5rem);
-                    background: $Light-Grayish-Blue;
-                    z-index: -1;
-                    border-bottom-left-radius: 50px;
-    
-                    @media screen and (min-width: 30em) {
-                        width: 700px;
-                    }
-        
-                    @media screen and (min-width: 50em) {
-                        background-position: 0 50%;
-                        left: 35%;
-                        width: 700px;
-                    }
-                }
+.logo-hamburger {
+    // border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+    transition: all .5s ease;
 
-            }
-    
-                .menu {
-                    // border: 1px solid blue;
-                    width: 100%;
-                    position: absolute;
-                    top: 0;
-                    z-index: 2;
-                }
-    
-                .btn-close {
-                    // border: 1px solid orange;
-                    display: flex;
-                    align-items: center;
-                    justify-content: end;
-                    width: 82.5%;
-                    z-index: 3;
-                    
-    
-                    img {
-                        cursor: pointer;
-                    }
+    &::before {
+        content: '';
+        // border: 3px solid green;
+        height: 740px;
+        width: 400px;
+        background-position: 0% 20%;
+        position: absolute;
+        transform: translateX(9.5rem);
+        background: $Light-Grayish-Blue;
+        z-index: -1;
+        border-bottom-left-radius: 50px;
 
-                    @media screen and (min-width: 50em) {
-                        display: none;
-                    }
-                }
-    
-                .mobile-menu {
-                    // border: 1px solid red;
-                    display: flex;
-                    gap: 1.5rem;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    margin-top: 4rem;
-                    margin-inline: auto;
-                    padding-block: 2rem;
-                    position: absolute;
-                    width: 82.5%;
-                    background-color: #fff;
-                    text-transform: uppercase;
-                    box-shadow: 0px 10px 20px rgba($color: #000000, $alpha: .5);
-                    z-index: 1;
-    
-                    a {
-                        font-weight: 700;
-                        color: $Very-Dark-Blue;
-                        text-decoration: none;
-    
-                        &:hover {
-                            color: $Grayish-Blue;
-                        }
-                    }
-    
-                    hr {
-                        color: $Grayish-Blue;
-                        width: 80%;
-                    }
-    
-                    .login {
-                        color: $Grayish-Blue;
-                    }
-                }
-    
-            .menu-hide {
-                display: none;
-                // left: 100vw;
+        @media screen and (min-width: 30em) {
+            width: 700px;
+        }
 
-                @media screen and (min-width: 50em) {
-
-                    display: flex;
-                    flex-direction: row;
-                    position: absolute;
-                    margin-top: 0;
-                    background: transparent;
-                    padding-block: 0;
-                    width: 93%;
-                    align-items: center;
-                    justify-content: flex-end;
-                    box-shadow: none;
-
-                    hr {
-                        width: 2px;
-                    }
-                }
-            }
+        @media screen and (min-width: 50em) {
+            background-position: 0 50%;
+            left: 35%;
+            width: 700px;
         }
     }
-        
+}
+    
+.logo {
+    width: 25px;
+}
+    
+.hamburger {
+    // border: 1px solid #000;
+    cursor: pointer;
 
-        
+    @media screen and (min-width: 50em) {
+        .hamburger {
+            display: none;
+        }
+    }
+}
+    
+                
+    
+.menu {
+    // border: 1px solid blue;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+    
+.btn-close {
+    // border: 1px solid orange;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    z-index: 3;
 
-        
+    img {
+        cursor: pointer;
+    }
+
+    @media screen and (min-width: 50em) {
+        display: none;
+    }
+}
+                    
+    
+                    
+    
+.mobile-menu {
+    // border: 1px solid red;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem auto 0 auto;
+    padding: 2rem 0 2rem 0;
+    background-color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0px 10px 20px rgba($color: #000000, $alpha: .5);
+    z-index: 1;
+}
+    
+a {
+    font-weight: 700;
+    color: $Very-Dark-Blue;
+    text-decoration: none;
+    
+    &:hover {
+        color: $Grayish-Blue;
+    }
+}
+    
+hr {
+    color: $Grayish-Blue;
+    width: 80%;
+}
+    
+.login {
+    color: $Grayish-Blue;
+}
+    
+.menu-hide {
+    display: none;
+    // left: 100vw;
+
+    @media screen and (min-width: 50em) {
+
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+        background: transparent;
+        padding: 0;
+        width: 93%;
+        align-items: center;
+        justify-content: flex-end;
+        box-shadow: none;
+
+        hr {
+            width: 2px;
+        }
+    }
 }
 
 .hamburger-hide {
     opacity: 0;
- }
+}
 
- .btn-close-hide {
-     opacity: 0;
- }
+.btn-close-hide {
+    opacity: 0;
+}
 
- .img-desktop {
+.img-desktop {
     display: none;
- }
+}
 
 .context-wrapper {
     // border: 1px solid purple;
     display: flex;
-    margin-inline: auto;
+    margin: 0 auto 0 auto;
     flex-direction: column;
 
     @media screen and (min-width: 50em) {
@@ -169,84 +170,53 @@ main {
         }
 
         width: 82.5%;
-            margin-top: 6rem;
-            // margin-left: 8%;
+        margin-top: 6rem;
+        // margin-left: 8%;
     
-            .project-planning-text {
-                margin-top: 1.2rem;
-            }
+        .project-planning-text {
+            margin-top: 1.2rem;
+        }
     
-            .btn-section {
-                margin-top: 3rem;
-            }
-
-            .illustration {
-                margin-top: 0;
-                margin-left: 10rem;
-
-                img {
-                    transform: scale(2.5);
-                }
-            }
+        .btn-section {
+            margin-top: 3rem;
+        }
     }
 }
 
-    .illustration {
-        // border: 1px solid yellowgreen;
-        margin-top: 5rem;
-        height: 250px;
+.illustration {
+    // border: 1px solid yellowgreen;
+    margin-top: 5rem;
+    height: 250px;
 
-        @media screen and (min-width: 50em) {
-            visibility: hidden;
-            margin-top: 12rem;
+    img {
+        // border: 1px solid purple;
+        width: 100%;
+        margin-top: 2rem;
+        margin-left: 4.1rem;
+        transform: scale(1.35);
+
+        @media screen and (min-width: 30em) {
+            width: 80%;
+            left: 50%;
         }
 
-        img {
-            // border: 1px solid purple;
-            width: 100%;
-            margin-top: 2rem;
-            margin-left: 4.1rem;
-            transform: scale(1.35);
+        @media screen and (min-width: 50em) {
+            width: 50%;
+            left: 60%;
+        }
+        
+    }
 
-            @media screen and (min-width: 30em) {
-                width: 80%;
-                left: 50%;
-            }
+    @media screen and (min-width: 50em) {
+        visibility: hidden;
+    }
 
-            @media screen and (min-width: 50em) {
-                width: 50%;
-                left: 60%;
-            }
-            
-     
-       }
 }
 
 .text {
     // border: 1px solid red;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin: 4rem auto 4rem auto;
     width: 85%;
-    margin-inline: auto;
-
-    span {
-        color: #fff;
-        background: $Very-Dark-Blue;
-        padding: .1rem .4rem;
-        border-radius: 20px;
-        text-transform: uppercase;
-        font-weight: 600;
-        font-family: 'Barlow Condensed', sans-serif;
-        letter-spacing: normal;
-
-    }
-
-    .mono {
-        text-transform: uppercase;
-        letter-spacing: 4px;
-        font-family: 'Barlow Condensed', sans-serif;
-        color: $Very-Dark-Blue;
-    }
 
     h1 {
         font-family: 'Barlow Condensed', sans-serif;
@@ -257,44 +227,66 @@ main {
         letter-spacing: 2px;
     }
 
-    .project-planning-text {
-        margin-top: .9rem;
-        font-size: 1.2rem;
-        color: $Very-Dark-Blue;
-    }
-
-    .btn-section {
-        margin-top: 1rem;
-        text-transform: uppercase;
-        font-family: 'Barlow Condensed', sans-serif;
-        color: $Very-Dark-Blue;
-        font-size: .9rem;
-        letter-spacing: 1px;
-
-        button {
-            font-family: 'Barlow Condensed', sans-serif;
-            font-weight: 600;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            border: none;
-            border-radius: 5px;
-            padding: .5rem 1.1rem;
-            background: $Red;
-            color: #fff;
-            margin-right: 1rem;
-
-            &:hover {
-                cursor: pointer;
-                background: lighten($color: $Red, $amount: 5);
-                transition: all .5s ease;
-            }
-        }
-    }
-
     @media screen and (min-width: 50em) {
         h1 {
             font-size: 3.5rem;
             line-height: 1;
+        }
+    }
+}
+
+    
+
+.mono {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: $Very-Dark-Blue;
+
+    span {
+        color: #fff;
+        background: $Very-Dark-Blue;
+        padding: .1rem .4rem;
+        border-radius: 20px;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-family: 'Barlow Condensed', sans-serif;
+        letter-spacing: normal;
+    
+    }
+}
+
+    
+
+.project-planning-text {
+    margin-top: .9rem;
+    font-size: 1.2rem;
+    color: $Very-Dark-Blue;
+}
+
+.btn-section {
+    margin-top: 1rem;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: $Very-Dark-Blue;
+    font-size: .9rem;
+    letter-spacing: 1px;
+
+    button {
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 5px;
+        padding: .5rem 1.1rem;
+        background: $Red;
+        color: #fff;
+        margin-right: 1rem;
+
+        &:hover {
+            cursor: pointer;
+            background: lighten($color: $Red, $amount: 5);
+            transition: all .5s ease;
         }
     }
 }

@@ -82,11 +82,13 @@ main {
   overflow: hidden;
 }
 
-main .hero .hero-wrapper {
+.hero-wrapper {
   position: relative;
+  width: 85%;
+  margin: 0 auto 0 auto;
 }
 
-main .hero .hero-wrapper .logo-hamburger {
+.logo-hamburger {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -94,15 +96,7 @@ main .hero .hero-wrapper .logo-hamburger {
   transition: all .5s ease;
 }
 
-main .hero .hero-wrapper .logo-hamburger .logo {
-  width: 25px;
-}
-
-main .hero .hero-wrapper .logo-hamburger .hamburger {
-  cursor: pointer;
-}
-
-main .hero .hero-wrapper .logo-hamburger::before {
+.logo-hamburger::before {
   content: '';
   height: 740px;
   width: 400px;
@@ -115,98 +109,108 @@ main .hero .hero-wrapper .logo-hamburger::before {
 }
 
 @media screen and (min-width: 30em) {
-  main .hero .hero-wrapper .logo-hamburger::before {
+  .logo-hamburger::before {
     width: 700px;
   }
 }
 
 @media screen and (min-width: 50em) {
-  main .hero .hero-wrapper .logo-hamburger::before {
+  .logo-hamburger::before {
     background-position: 0 50%;
     left: 35%;
     width: 700px;
   }
 }
 
-main .hero .hero-wrapper .menu {
+.logo {
+  width: 25px;
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 50em) {
+  .hamburger .hamburger {
+    display: none;
+  }
+}
+
+.menu {
   width: 100%;
   position: absolute;
   top: 0;
   z-index: 2;
 }
 
-main .hero .hero-wrapper .btn-close {
+.btn-close {
   display: flex;
   align-items: center;
   justify-content: end;
-  width: 82.5%;
+  width: 100%;
   z-index: 3;
 }
 
-main .hero .hero-wrapper .btn-close img {
+.btn-close img {
   cursor: pointer;
 }
 
 @media screen and (min-width: 50em) {
-  main .hero .hero-wrapper .btn-close {
+  .btn-close {
     display: none;
   }
 }
 
-main .hero .hero-wrapper .mobile-menu {
+.mobile-menu {
   display: flex;
   gap: 1.5rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 4rem;
-  margin-inline: auto;
-  padding-block: 2rem;
-  position: absolute;
-  width: 82.5%;
+  margin: 4rem auto 0 auto;
+  padding: 2rem 0 2rem 0;
   background-color: #fff;
   text-transform: uppercase;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
-main .hero .hero-wrapper .mobile-menu a {
+a {
   font-weight: 700;
   color: #242942;
   text-decoration: none;
 }
 
-main .hero .hero-wrapper .mobile-menu a:hover {
+a:hover {
   color: #a0a1ac;
 }
 
-main .hero .hero-wrapper .mobile-menu hr {
+hr {
   color: #a0a1ac;
   width: 80%;
 }
 
-main .hero .hero-wrapper .mobile-menu .login {
+.login {
   color: #a0a1ac;
 }
 
-main .hero .hero-wrapper .menu-hide {
+.menu-hide {
   display: none;
 }
 
 @media screen and (min-width: 50em) {
-  main .hero .hero-wrapper .menu-hide {
+  .menu-hide {
     display: flex;
     flex-direction: row;
-    position: absolute;
     margin-top: 0;
     background: transparent;
-    padding-block: 0;
+    padding: 0;
     width: 93%;
     align-items: center;
     justify-content: flex-end;
     box-shadow: none;
   }
-  main .hero .hero-wrapper .menu-hide hr {
+  .menu-hide hr {
     width: 2px;
   }
 }
@@ -225,7 +229,7 @@ main .hero .hero-wrapper .menu-hide {
 
 .context-wrapper {
   display: flex;
-  margin-inline: auto;
+  margin: 0 auto 0 auto;
   flex-direction: column;
 }
 
@@ -244,25 +248,11 @@ main .hero .hero-wrapper .menu-hide {
   .context-wrapper .btn-section {
     margin-top: 3rem;
   }
-  .context-wrapper .illustration {
-    margin-top: 0;
-    margin-left: 10rem;
-  }
-  .context-wrapper .illustration img {
-    transform: scale(2.5);
-  }
 }
 
 .illustration {
   margin-top: 5rem;
   height: 250px;
-}
-
-@media screen and (min-width: 50em) {
-  .illustration {
-    visibility: hidden;
-    margin-top: 12rem;
-  }
 }
 
 .illustration img {
@@ -286,29 +276,15 @@ main .hero .hero-wrapper .menu-hide {
   }
 }
 
+@media screen and (min-width: 50em) {
+  .illustration {
+    visibility: hidden;
+  }
+}
+
 .text {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin: 4rem auto 4rem auto;
   width: 85%;
-  margin-inline: auto;
-}
-
-.text span {
-  color: #fff;
-  background: #242942;
-  padding: .1rem .4rem;
-  border-radius: 20px;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-family: 'Barlow Condensed', sans-serif;
-  letter-spacing: normal;
-}
-
-.text .mono {
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  font-family: 'Barlow Condensed', sans-serif;
-  color: #242942;
 }
 
 .text h1 {
@@ -320,13 +296,38 @@ main .hero .hero-wrapper .menu-hide {
   letter-spacing: 2px;
 }
 
-.text .project-planning-text {
+@media screen and (min-width: 50em) {
+  .text h1 {
+    font-size: 3.5rem;
+    line-height: 1;
+  }
+}
+
+.mono {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-family: 'Barlow Condensed', sans-serif;
+  color: #242942;
+}
+
+.mono span {
+  color: #fff;
+  background: #242942;
+  padding: .1rem .4rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: normal;
+}
+
+.project-planning-text {
   margin-top: .9rem;
   font-size: 1.2rem;
   color: #242942;
 }
 
-.text .btn-section {
+.btn-section {
   margin-top: 1rem;
   text-transform: uppercase;
   font-family: 'Barlow Condensed', sans-serif;
@@ -335,8 +336,7 @@ main .hero .hero-wrapper .menu-hide {
   letter-spacing: 1px;
 }
 
-.text .btn-section button {
-  font-family: 'Barlow Condensed', sans-serif;
+.btn-section button {
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -348,17 +348,10 @@ main .hero .hero-wrapper .menu-hide {
   margin-right: 1rem;
 }
 
-.text .btn-section button:hover {
+.btn-section button:hover {
   cursor: pointer;
   background: #ff7575;
   transition: all .5s ease;
-}
-
-@media screen and (min-width: 50em) {
-  .text h1 {
-    font-size: 3.5rem;
-    line-height: 1;
-  }
 }
 
 .container {
@@ -380,9 +373,6 @@ main .hero .hero-wrapper .menu-hide {
   .hero .img-desktop img {
     margin-right: -17rem;
     margin-top: 5rem;
-  }
-  .hero .hamburger {
-    display: none;
   }
   .hero .hero-wrapper .menu-hide {
     display: block;

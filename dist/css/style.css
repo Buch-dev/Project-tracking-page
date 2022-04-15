@@ -259,10 +259,12 @@ hr {
 @media screen and (min-width: 50em) {
   .text {
     margin: 1rem auto 4rem auto;
+    width: 70%;
   }
   .text h1 {
     font-size: 3.5rem;
     line-height: 1;
+    width: 90%;
   }
 }
 

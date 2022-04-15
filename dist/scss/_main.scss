@@ -238,6 +238,7 @@ hr {
     width: 85%;
 
     h1 {
+        // border: 1px solid red;
         font-family: 'Barlow Condensed', sans-serif;
         margin-top: 1rem;
         color: $Very-Dark-Blue;
@@ -252,9 +253,11 @@ hr {
 
     @media screen and (min-width: 50em) {
         margin: 1rem auto 4rem auto;
+        width: 70%;
         h1 {
             font-size: 3.5rem;
             line-height: 1;
+            width: 90%;
         }
     }
 }

@@ -190,7 +190,7 @@ hr {
 @media screen and (min-width: 50em) {
   .context-wrapper {
     flex-direction: row-reverse;
-    width: 82.5%;
+    width: 85%;
     margin-top: 6rem;
   }
   .context-wrapper * {
@@ -250,7 +250,16 @@ hr {
   letter-spacing: 2px;
 }
 
+@media screen and (min-width: 30em) {
+  .text {
+    margin: 8rem auto 4rem auto;
+  }
+}
+
 @media screen and (min-width: 50em) {
+  .text {
+    margin: 1rem auto 4rem auto;
+  }
   .text h1 {
     font-size: 3.5rem;
     line-height: 1;

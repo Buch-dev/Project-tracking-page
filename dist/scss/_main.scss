@@ -235,7 +235,7 @@ hr {
 .text {
     // border: 1px solid red;
     margin: 4rem auto 4rem auto;
-    width: 85%;
+    width: 80%;
 
     h1 {
         // border: 1px solid red;
@@ -292,12 +292,13 @@ hr {
 }
 
 .btn-section {
+    // border: 1px solid red;
     margin-top: 1rem;
     text-transform: uppercase;
     font-family: 'Barlow Condensed', sans-serif;
     color: $Very-Dark-Blue;
     font-size: .9rem;
-    letter-spacing: 1px;
+    letter-spacing: .5px;
 
     button {
         font-weight: 600;
@@ -305,7 +306,7 @@ hr {
         text-transform: uppercase;
         border: none;
         border-radius: 5px;
-        padding: .5rem 1.1rem;
+        padding: .5rem .5rem;
         background: $Red;
         color: #fff;
         margin-right: 1rem;

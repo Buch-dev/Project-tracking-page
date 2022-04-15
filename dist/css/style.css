@@ -238,7 +238,7 @@ hr {
 
 .text {
   margin: 4rem auto 4rem auto;
-  width: 85%;
+  width: 80%;
 }
 
 .text h1 {
@@ -298,7 +298,7 @@ hr {
   font-family: 'Barlow Condensed', sans-serif;
   color: #242942;
   font-size: .9rem;
-  letter-spacing: 1px;
+  letter-spacing: .5px;
 }
 
 .btn-section button {
@@ -307,7 +307,7 @@ hr {
   text-transform: uppercase;
   border: none;
   border-radius: 5px;
-  padding: .5rem 1.1rem;
+  padding: .5rem .5rem;
   background: #ff5c5c;
   color: #fff;
   margin-right: 1rem;
